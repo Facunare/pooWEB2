@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    padding: 1.5rem 1rem;
+    color: white;
+    background-color: #353a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li{
+    display: inline;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+header li a{
+    color: rgba(255, 255, 255, 0.377);
+    text-decoration: none;
+}
+
+.header_a:hover{
+    color: white;
+}
+
+.header_a_5{
+    color: green;
+}
+
+main{
+    height: 50vh;
+    background-image: url("./img/hawaii.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+main::before{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.377);
+    content: "";
+    inset: 0;
+}
+
+main div{
+    width: 500px;  
+    position: relative;
+}
+
+
+section{
+    height: 60vh;   
+}
+
+.title{
+    text-align: center;
+}
+
+section h3{
+    opacity: .5;
+    font-size: 13px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+section h2{
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: 440px;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-radius: 5px;
+}
+
+.card h1, .card p{
+    margin-left: 10px;
+}
+
+.card img{
+    height: 250px;
+    width: 250px;
+}
+
+.habilities{
+    display: flex;
+    margin-top: 10px;
+}
+
+.section2{
+    height: 40vh;
+    display: flex;
+}
+
+.section2 img{
+    width: 50%;
+    max-width: 200vw;
+    object-fit: cover;
+    border-right: 2px solid white;
+}
+
+.section2 div{
+    background-color: #353a40;
+    border-left: 2px solid white;
+    padding: 20px;
+    color: white;
+}
+
+.section3{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3 p{
+    margin-top: 10px;
+}
+
+.section3 span{
+    text-decoration: underline dotted;
+}
+
+.form{
+    margin-top: 50px;
+}
+
+input{
+    height: 30px;
+    width: 350px;
+    padding-left: 15px;
+}
+
+input:first-child{
+    margin-right: 15px;
+}
+
+textarea{
+    width: 719px;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    resize: none;
+}
+
+input[type="submit"]{
+    width: 720px;
+    height: 40px;
+    background-color: #96c93e;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    transition: background-color ease .3s;
+}
+
+input[type="submit"]:hover{
+    background-color: #2ba641;
+}
+
+footer{
+    padding: 2rem 1rem;
+    background-color: #1c3d4e;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+footer li{
+    display: inline;
+    color: white;
+    margin: 10px;
+}
+
+footer li a{
+    color: white;
+    text-decoration: none;
+}
+
+.javascript{
+    padding: 2px 5px 2px 5px;
+    background-color: #ffc107;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    
+
+}
+
+.react{
+    height: 25px;
+    padding: 2px 6px 2px 6px;
+    background-color: #11a4b7;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.armasTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.armas{
+    width:40px;
+}
+
+.armasTitle p{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.quieroSerOrador, .conoce{
+    border: 1px solid white;
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 15px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.comprarButton{
+    height: 40px;
+    width: 150px;
+    margin-left: 5px;
+    background-color: #2ba641;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comprarButton:hover{
+    background-color: #2a903d;
+}
+
+.quieroSerOrador:hover, .conoce:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.negocios{
+    height: 25px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    background-color: #70757f;
+    color: white;
+    font-weight: 500;
+}
+
+.startups{
+    height: 25px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    background-color: #db3445;
+}
+
+.p{
+    color: rgba(128, 128, 128, 0.807);
+    transform: translateY(-13px);
+}
+
